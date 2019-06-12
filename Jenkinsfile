@@ -4,7 +4,7 @@ pipeline {
         stage('Build Jar') {
             agent {
                 docker {
-                    image 'maven:3-alpine-xfce4'
+                    image 'matfur92/maven-3-alpine-xfce4'
                     args '-v /root/.m2:/root/.m2'
                 }
             }
