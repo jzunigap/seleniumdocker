@@ -1,5 +1,11 @@
 pipeline {
     // master executor should be set to 0
+
+    environment {
+        registry = "juanzuniga/selenium-docker"
+        registryCredential = 'dockerhub'
+        //dockerImage = ''
+      }
     agent any
     stages {
         stage('Build Jar') {
