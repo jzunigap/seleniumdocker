@@ -24,7 +24,7 @@ public class BaseTest {
 
         String host = "localhost";
         DesiredCapabilities dc;
-
+/*
         if(System.getProperty("BROWSER")!= null &&
             System.getProperty("BROWSER").equalsIgnoreCase("firefox")){
             dc=DesiredCapabilities.firefox();
@@ -47,11 +47,11 @@ public class BaseTest {
             //some exception is thrown here
         }catch(Exception e){
             driver.quit();
-        }
-        /*
+        }*/
+
         //set path
         System.setProperty("webdriver.chrome.driver","/Users/juan.zuniga/Documents/Drivers/chromedriver");
-        this.driver=new ChromeDriver();*/
+        this.driver=new ChromeDriver();
     }
 
     @AfterTest

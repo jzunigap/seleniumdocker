@@ -7,22 +7,10 @@
       <class name="com.searchmodule.tests.SearchTest">
         <methods>
           <include name="quitBrowser"/>
-          <include name="search"/>
+          <include name="search" invocation-numbers="0"/>
           <include name="setupDriver"/>
         </methods>
       </class> <!-- com.searchmodule.tests.SearchTest -->
     </classes>
   </test> <!-- search-test-java(failed) -->
-  <test thread-count="5" name="search-test-QA(failed)">
-    <parameter name="keyword" value="qa"/>
-    <classes>
-      <class name="com.searchmodule.tests.SearchTest">
-        <methods>
-          <include name="quitBrowser"/>
-          <include name="search"/>
-          <include name="setupDriver"/>
-        </methods>
-      </class> <!-- com.searchmodule.tests.SearchTest -->
-    </classes>
-  </test> <!-- search-test-QA(failed) -->
 </suite> <!-- Failed suite [search-module] -->
